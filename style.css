@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    background: linear-gradient(-45deg, #EE7752, #E73C7e, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    text-transform: uppercase;
+}
+
+.kalkulator p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.kalkulator input {
+    width: 250px;
+    height: 20px;
+    margin-top: -40px;
+    border-radius: 5px;
+}
+
+.kalkulator button {
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.kalkulator button:hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
